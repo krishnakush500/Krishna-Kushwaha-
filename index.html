@@ -367,6 +367,82 @@
         color: var(--primary-blue);
     }
 </style>
+    <!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मुझे भुगतान करें</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .payment-box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #f9f9f9;
+        }
+        .upi-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 18px;
+        }
+        .qr-code {
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: white;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>मुझे भुगतान करें</h1>
+    
+    <div class="payment-box">
+        <h2>UPI के माध्यम से भुगतान</h2>
+        <p>मेरा UPI ID: <strong>8580594404-4@axl</strong></p>
+        
+        <div>
+            <label for="amount">रकम (₹)</label><br>
+            <input type="number" id="amount" placeholder="100" min="1">
+        </div>
+        
+        <a href="#" id="upiLink" class="upi-btn">UPI ऐप से भुगतान करें</a>
+        
+        <p>या मैन्युअली UPI ID डालें: <strong>8580594404-4@axl</strong></p>
+    </div>
+
+    <script>
+        document.getElementById('amount').addEventListener('input', function() {
+            const amount = this.value || '100';
+            const upiLink = `upi://pay?pa=8580594404-4@axl&pn=भुगतान&am=${amount}&cu=INR&tn=धन्यवाद`;
+            document.getElementById('upiLink').href = upiLink;
+        });
+        
+        // पहली बार लोड होने पर डिफॉल्ट सेट करें
+        document.getElementById('amount').dispatchEvent(new Event('input'));
+    </script>
+</body>
+</html>
 <!-- Benefits Section -->
 <section class="benefits" id="benefits">
     <div class="container">
