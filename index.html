@@ -3,162 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>कंपनी फीडबैक फॉर्म</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'Roboto', sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 900px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: #4285f4;
-            color: white;
-            padding: 25px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-        
-        .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.5;
-        }
-        
-        .form-container {
-            padding: 10px;
-        }
-        
-        .form-iframe {
-            width: 100%;
-            height: 1300px; /* फॉर्म की लंबाई के अनुसार समायोजित करें */
-            border: none;
-            border-radius: 0 0 16px 16px;
-        }
-        
-        .footer-note {
-            text-align: center;
-            padding: 20px;
-            color: #5f6368;
-            font-size: 0.95rem;
-            background: #f8f9fa;
-            border-top: 1px solid #e8eaed;
-        }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8rem;
-            }
-            
-            .form-iframe {
-                height: 1500px; /* मोबाइल पर थोड़ा ज्यादा ऊंचाई */
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .header {
-                padding: 20px 15px;
-            }
-            
-            .header h1 {
-                font-size: 1.5rem;
-            }
-            
-            .header p {
-                font-size: 0.95rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>कंपनी फीडबैक फॉर्म</h1>
-            <p>कृपया इस फॉर्म को ध्यान से भरें। आपकी प्रतिक्रिया हमारे लिए मूल्यवान है और हमें हमारी सेवाओं में सुधार करने में मदद करेगी।</p>
-        </div>
-        
-        <div class="form-container">
-            <!-- यहाँ आपका Google Form एम्बेडेड है -->
-            <iframe 
-                class="form-iframe" 
-                src="https://docs.google.com/forms/d/e/1FAIpQLScDV_Efd2Yr6TDBTwJfChfnd51YexS6DQD8sptJFQRA1NOXdA/viewform?embedded=true"
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                लोड हो रहा है...
-            </iframe>
-        </div>
-        
-        <div class="footer-note">
-            <p>सबमिट करने के बाद "आपकी प्रतिक्रिया सबमिट हो गई है" का संदेश दिखाई देगा</p>
-        </div>
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Smart School Hub - Smart School Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>कृष्णा डिजिटल सेवा केंद्र - गांव में डिजिटल क्रांति</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary-blue: #2c6e9b;
-            --primary-green: #4CAF50;
-            --light-blue: #e3f2fd;
-            --light-green: #e8f5e9;
-            --dark-text: #333;
-            --light-text: #f5f5f5;
-            --shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        
+        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--dark-text);
-            background-color: #f9f9f9;
-            overflow-x: hidden;
+        :root {
+            --primary: #2563EB;
+            --secondary: #3B82F6;
+            --accent: #10B981;
+            --light: #F9FAFB;
+            --dark: #1F2937;
+            --whatsapp: #25D366;
+            --card-bg: #FFFFFF;
+            --section-bg: #F3F4F6;
         }
         
-        h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--primary-blue);
+        body {
+            font-family: 'Segoe UI', 'Nirmala UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        .hindi {
+            font-family: 'Nirmala UI', 'Mangal', Arial, sans-serif;
         }
         
         .container {
@@ -168,1054 +42,631 @@
             padding: 0 15px;
         }
         
-        /* Header & Navigation */
+        section {
+            padding: 60px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: var(--primary);
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Header Styles */
         header {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
-            padding: 1rem 0;
+            background: var(--primary);
+            color: white;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: var(--shadow);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 15px 0;
         }
         
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .logo-icon {
-            background: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-blue);
-            font-size: 1.2rem;
-        }
-        
-        .logo-text {
-            color: white;
-            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
             font-weight: 700;
-            font-size: 1.5rem;
         }
         
         nav ul {
             display: flex;
             list-style: none;
-            gap: 1.5rem;
         }
         
-        nav a {
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
             color: white;
-            text-decoration: none;
             font-weight: 500;
-            padding: 0.5rem;
-            transition: all 0.3s ease;
+            font-size: 1rem;
+            padding: 5px 10px;
             border-radius: 4px;
         }
         
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.2);
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
         }
         
-        .mobile-menu-btn {
+        .menu-toggle {
             display: none;
-            background: none;
-            border: none;
-            color: white;
             font-size: 1.5rem;
             cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>कंपनी फीडबैक फॉर्म</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'Roboto', sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 900px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: #4285f4;
-            color: white;
-            padding: 25px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-        
-        .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.5;
-        }
-        
-        .form-container {
-            padding: 10px;
-        }
-        
-        .form-iframe {
-            width: 100%;
-            height: 1300px; /* फॉर्म की लंबाई के अनुसार समायोजित करें */
+            background: transparent;
             border: none;
-            border-radius: 0 0 16px 16px;
+            color: white;
         }
         
-        .footer-note {
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(59, 130, 246, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%232563eb"/><circle cx="20" cy="20" r="5" fill="%233b82f6" opacity="0.5"/><circle cx="50" cy="50" r="8" fill="%233b82f6" opacity="0.3"/><circle cx="80" cy="80" r="5" fill="%233b82f6" opacity="0.5"/></svg>');
+            background-size: cover;
+            color: white;
             text-align: center;
-            padding: 20px;
-            color: #5f6368;
-            font-size: 0.95rem;
-            background: #f8f9fa;
-            border-top: 1px solid #e8eaed;
+            padding: 100px 0;
         }
         
-        @media (max-width: 768px) {
-            .header h1 {
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Services Section */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        }
+        
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .service-card h3 i {
+            color: var(--accent);
+        }
+        
+        .price {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        /* Packages Section */
+        .packages {
+            background: var(--section-bg);
+        }
+        
+        .packages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .package-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #E5E7EB;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .package-header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+        }
+        
+        .package-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .package-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        
+        .package-body {
+            padding: 25px;
+        }
+        
+        .package-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        .package-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #F3F4F6;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .package-features li i {
+            color: var(--accent);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .contact-info {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-text h4 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
                 font-size: 1.8rem;
             }
             
-            .form-iframe {
-                height: 1500px; /* मोबाइल पर थोड़ा ज्यादा ऊंचाई */
+            .hero p {
+                font-size: 1.1rem;
             }
         }
         
-        @media (max-width: 480px) {
-            .header {
-                padding: 20px 15px;
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
             }
             
-            .header h1 {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 15px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 12px;
+                border-radius: 0;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
                 font-size: 1.5rem;
             }
             
-            .header p {
-                font-size: 0.95rem;
+            .packages-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>कंपनी फीडबैक फॉर्म</h1>
-            <p>कृपया इस फॉर्म को ध्यान से भरें। आपकी प्रतिक्रिया हमारे लिए मूल्यवान है और हमें हमारी सेवाओं में सुधार करने में मदद करेगी।</p>
-        </div>
-        
-        <div class="form-container">
-            <!-- यहाँ आपका Google Form एम्बेडेड है -->
-            <iframe 
-                class="form-iframe" 
-                src="https://docs.google.com/forms/d/e/1FAIpQLScDV_Efd2Yr6TDBTwJfChfnd51YexS6DQD8sptJFQRA1NOXdA/viewform?embedded=true"
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                लोड हो रहा है...
-            </iframe>
-        </div>
-        
-        <div class="footer-note">
-            <p>सबमिट करने के बाद "आपकी प्रतिक्रिया सबमिट हो गई है" का संदेश दिखाई देगा</p>
-        </div>
-    </div>
-</body>
-</html>
-    
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918580594404" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/918580594404" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-school"></i>
-                </div>
-                <div class="logo-text">Krishna Kushwaha Digital</div>
-            </div>
-            <button class="mobile-menu-btn" id="menuToggle">
-        <i class="fas fa-bars"></i>
+            <div class="logo hindi">कृष्णा डिजिटल सेवा केंद्र</div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
             </button>
             <nav>
                 <ul id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="hindi">होम</a></li>
+                    <li><a href="#services" class="hindi">सेवाएं</a></li>
+                    <li><a href="#packages" class="hindi">पैकेज</a></li>
+                    <li><a href="#contact" class="hindi">संपर्क करें</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Make Your School Smart & Digital!</h1>
-            <p class="subline">Website, Result, Paper, Poster — Everything in One Place</p>
-            
-            <div class="intro">
-                <p>Hi! I'm Krishna Kushwaha. I help village and small schools become smart & digital with affordable solutions.</p>
-                <a href="https://wa.me/918580594404" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Contact on WhatsApp
-                </a>
-            </div>
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="hindi">गांव में पहली बार! अब हर काम होगा डिजिटल।</h1>
+            <p class="hindi">मोबाइल से एडमिशन फॉर्म, रिज़ल्ट, ID कार्ड, पोस्टर और भी बहुत कुछ!</p>
+            <a href="#contact" class="btn hindi">अभी संपर्क करें</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Services Section -->
-<section class="services" id="services">
-    <div class="container">
-        <div class="section-header">
-            <h2>What I Offer</h2>
-        </div>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-laptop-code"></i>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title hindi">हमारी सेवाएं</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> एडमिशन फॉर्म बनाना</h3>
+                    <p class="hindi">Professional admission form design and printing</p>
+                    <span class="price hindi">₹200</span>
                 </div>
-                <div class="service-content">
-                    <h3>School Website Design</h3>
-                    <p>Professional and responsive websites tailored for educational institutions.</p>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> ऑनलाइन रिजल्ट निकालना</h3>
+                    <p class="hindi">Online result generation and printing</p>
+                    <span class="price hindi">₹200</span>
                 </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-file-alt"></i>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> फीस रसीद डिज़ाइन</h3>
+                    <p class="hindi">Fee receipt design</p>
+                    <span class="price hindi">₹100</span>
                 </div>
-                <div class="service-content">
-                    <h3>Online Admission Form</h3>
-                    <p>Streamline your admission process with digital forms and automated systems.</p>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> टाइम टेबल</h3>
+                    <p class="hindi">School timetable design</p>
+                    <span class="price hindi">₹50</span>
                 </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-chart-line"></i>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> प्रश्न पत्र</h3>
+                    <p class="hindi">Exam paper design</p>
+                    <span class="price hindi">₹50</span>
                 </div>
-                <div class="service-content">
-                    <h3>Online Exam Result System</h3>
-                    <p>Efficient result management system with secure online access for students and parents.</p>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> ID कार्ड</h3>
+                    <p class="hindi">Personal/institutional ID cards</p>
+                    <span class="price hindi">₹80</span>
                 </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-file-pdf"></i>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> सर्टिफिकेट</h3>
+                    <p class="hindi">All types of certificates</p>
+                    <span class="price hindi">₹80</span>
                 </div>
-                <div class="service-content">
-                    <h3>Question Paper Design & Printing</h3>
-                    <p>Professional design and printing services for exams and tests.</p>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> पोस्टर / बैनर</h3>
+                    <p class="hindi">Poster and banner design</p>
+                    <span class="price hindi">₹100</span>
                 </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-bullhorn"></i>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> WhatsApp स्टेटस</h3>
+                    <p class="hindi">Video/image status creation</p>
+                    <span class="price hindi">₹50</span>
                 </div>
-                <div class="service-content">
-                    <h3>School Poster, Banner, Certificate Design</h3>
-                    <p>Eye-catching designs for school events, achievements, and official documents.</p>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> QR कोड</h3>
+                    <p class="hindi">Custom QR code generation</p>
+                    <span class="price hindi">₹20</span>
                 </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="service-content">
-                    <h3>WhatsApp/SMS Notice Service</h3>
-                    <p>Instant communication system for announcements and alerts to parents and staff.</p>
+                <div class="service-card">
+                    <h3 class="hindi"><i class="fas fa-check-circle"></i> वेबसाइट बनाना</h3>
+                    <p class="hindi">Professional website design</p>
+                    <span class="price hindi">₹2,499</span>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+                    </section>
 
-<style>
-    /* Hero Section */
-    .hero {
-        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%232c6e9b" opacity="0.05"/><path d="M0 50 Q 25 25, 50 50 T 100 50" stroke="%234CAF50" stroke-width="1" fill="none"/></svg>');
-        background-size: cover;
-        padding: 5rem 0;
-        text-align: center;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-        color: var(--primary-blue);
-        margin-bottom: 1rem;
-    }
-    
-    .hero p.subline {
-        font-size: 1.5rem;
-        color: var(--primary-green);
-        margin-bottom: 1.5rem;
-        font-weight: 500;
-    }
-    
-    .hero-content {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .intro {
-        background: white;
-        padding: 2rem;
-        border-radius: 10px;
-        box-shadow: var(--shadow);
-        margin: 2rem auto;
-        max-width: 600px;
-    }
-    
-    .btn {
-        display: inline-block;
-        background: var(--primary-green);
-        color: white;
-        padding: 0.8rem 2rem;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-        transition: all 0.3s ease;
-        border: 2px solid var(--primary-green);
-        margin-top: 1rem;
-    }
-    
-    .btn:hover {
-        background: white;
-        color: var(--primary-green);
-        transform: translateY(-3px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-    
-    .btn-whatsapp {
-        background: #25D366;
-        border-color: #25D366;
-    }
-    
-    .btn-whatsapp:hover {
-        color: #25D366;
-    }
-    
-    /* Section Styling */
-    section {
-        padding: 5rem 0;
-    }
-    
-    .section-header {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-    
-    .section-header h2 {
-        font-size: 2.2rem;
-        position: relative;
-        display: inline-block;
-        padding-bottom: 10px;
-    }
-    
-    .section-header h2::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70px;
-        height: 4px;
-        background: var(--primary-green);
-        border-radius: 2px;
-    }
-    
-    /* Services */
-    .services {
-        background: var(--light-blue);
-    }
-    
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-    
-    .service-card {
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-        transition: transform 0.3s ease;
-    }
-    
-    .service-card:hover {
-        transform: translateY(-10px);
-    }
-    
-    .service-icon {
-        background: var(--primary-blue);
-        color: white;
-        font-size: 2rem;
-        padding: 1.5rem;
-        text-align: center;
-    }
-    
-    .service-content {
-        padding: 1.5rem;
-    }
-    
-    .service-content h3 {
-        margin-bottom: 0.5rem;
-        color: var(--primary-blue);
-    }
-</style>
-    <!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मुझे भुगतान करें</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .payment-box {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 30px;
-            background-color: #f9f9f9;
-        }
-        .upi-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 25px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .qr-code {
-            margin: 20px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            background: white;
-        }
-        input {
-            padding: 10px;
-            width: 80%;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>मुझे भुगतान करें</h1>
-    
-    <div class="payment-box">
-        <h2>UPI के माध्यम से भुगतान</h2>
-        <p>मेरा UPI ID: <strong>8580594404-4@axl</strong></p>
-        
-        <div>
-            <label for="amount">रकम (₹)</label><br>
-            <input type="number" id="amount" placeholder="100" min="1">
+        <!-- Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <h2 class="section-title hindi">हमारे पैकेज</h2>
+            <div class="packages-container">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="hindi">🎓 School Pack</h3>
+                        <p class="package-price hindi">₹599</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features hindi">
+                            <li><i class="fas fa-check"></i> एडमिशन फॉर्म डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> ऑनलाइन रिजल्ट निकालना</li>
+                            <li><i class="fas fa-check"></i> ID कार्ड डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> फीस रसीद डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> टाइम टेबल डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> 2 सर्टिफिकेट डिज़ाइन</li>
+                        </ul>
+                        <a href="https://wa.me/918580594404?text=मुझे%20School%20Pack%20के%20बारे%20में%20जानकारी%20चाहिए" class="btn hindi">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="hindi">🛍️ Shop Pack</h3>
+                        <p class="package-price hindi">₹249</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features hindi">
+                            <li><i class="fas fa-check"></i> व्यापार कार्ड डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> विज्ञापन पोस्टर डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> मूल्य सूची डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> 5 कस्टम WhatsApp स्टेटस</li>
+                            <li><i class="fas fa-check"></i> QR कोड जेनरेशन</li>
+                            <li><i class="fas fa-check"></i> छूट कूपन डिज़ाइन</li>
+                        </ul>
+                        <a href="https://wa.me/918580594404?text=मुझे%20Shop%20Pack%20के%20बारे%20में%20जानकारी%20चाहिए" class="btn hindi">अभी खरीदें</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="hindi">🌐 Full Website Pack</h3>
+                        <p class="package-price hindi">₹2,499</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features hindi">
+                            <li><i class="fas fa-check"></i> पेशेवर वेबसाइट डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> मोबाइल-अनुकूल डिज़ाइन</li>
+                            <li><i class="fas fa-check"></i> 5 पेज वेबसाइट</li>
+                            <li><i class="fas fa-check"></i> मुफ्त होस्टिंग और डोमेन (1 वर्ष)</li>
+                            <li><i class="fas fa-check"></i> बेसिक SEO सेटअप</li>
+                            <li><i class="fas fa-check"></i> 1 साल तक सपोर्ट</li>
+                        </ul>
+                        <a href="https://wa.me/918580594404?text=मुझे%20Full%20Website%20Pack%20के%20बारे%20में%20जानकारी%20चाहिए" class="btn hindi">अभी खरीदें</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <a href="#" id="upiLink" class="upi-btn">UPI ऐप से भुगतान करें</a>
-        
-        <p>या मैन्युअली UPI ID डालें: <strong>8580594404-4@axl</strong></p>
-    </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title hindi">संपर्क करें</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 class="hindi">नाम</h4>
+                            <p class="hindi">कृष्णा कुशवाहा</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 class="hindi">फोन</h4>
+                            <p class="hindi">8580594404 / 8790729607</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 class="hindi">ईमेल</h4>
+                            <p>kk5674010@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 class="hindi">WhatsApp</h4>
+                            <p class="hindi">हमें WhatsApp पर मैसेज करें</p>
+                            <a href="https://wa.me/918580594404" class="btn hindi" style="margin-top: 10px;">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div style="background-color:#E5E7EB; border-radius:12px; padding:30px; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center;">
+                        <i class="fas fa-map-marker-alt" style="font-size:3rem; color:var(--primary); margin-bottom:20px;"></i>
+                        <h3 class="hindi">हमारा स्थान</h3>
+                        <p class="hindi">ग्रामीण भारत में डिजिटल सेवाएं उपलब्ध</p>
+                        <p class="hindi">हम पूरे उत्तर प्रदेश में सेवाएं प्रदान करते हैं</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="hindi">© Krishna Kushwaha Digital 2025 | गांव में डिजिटल क्रांति</p>
+            <p class="hindi" style="margin-top:10px; font-size:0.9rem;">कृष्णा कुशवाहा डिजिटल सेवा केंद्र - ग्रामीण भारत को डिजिटल बनाने का अभियान</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Mobile Menu -->
     <script>
-        document.getElementById('amount').addEventListener('input', function() {
-            const amount = this.value || '100';
-            const upiLink = `upi://pay?pa=8580594404-4@axl&pn=भुगतान&am=${amount}&cu=INR&tn=धन्यवाद`;
-            document.getElementById('upiLink').href = upiLink;
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
         });
-        
-        // पहली बार लोड होने पर डिफॉल्ट सेट करें
-        document.getElementById('amount').dispatchEvent(new Event('input'));
     </script>
-</body>
-</html>
-<!-- Benefits Section -->
-<section class="benefits" id="benefits">
-    <div class="container">
-        <div class="section-header">
-            <h2>Why Choose Me?</h2>
-        </div>
-        
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <h3>Save time & paper</h3>
-                <p>Reduce administrative tasks and paper usage with digital solutions.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-rupee-sign"></i>
-                </div>
-                <h3>Easy & budget-friendly</h3>
-                <p>Affordable solutions designed specifically for small schools and budgets.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-village"></i>
-                </div>
-                <h3>Special support for village schools</h3>
-                <p>Customized solutions that understand the unique challenges of rural education.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-smile"></i>
-                </div>
-                <h3>Better experience for parents & students</h3>
-                <p>Enhance communication and accessibility for the entire school community.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Portfolio Section -->
-<section class="portfolio" id="portfolio">
-    <div class="container">
-        <div class="section-header">
-            <h2>Portfolio & Demos</h2>
-            <p>See how your school can look online</p>
-        </div>
-        
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <i class="fas fa-school"></i>
-                </div>
-                <div class="portfolio-content">
-                    <h3>School Website Design</h3>
-                    <p>Modern, responsive school websites with easy content management.</p>
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="portfolio-content">
-                    <h3>Certificate Design</h3>
-                    <p>Professional certificates for achievements, competitions, and events.</p>
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <i class="fas fa-newspaper"></i>
-                </div>
-                <div class="portfolio-content">
-                    <h3>School Poster Design</h3>
-                    <p>Eye-catching posters for school events and announcements.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    /* Benefits */
-    .benefits-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-    }
-    
-    .benefit-card {
-        background: white;
-        border-radius: 10px;
-        padding: 2rem;
-        box-shadow: var(--shadow);
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-    
-    .benefit-card:hover {
-        background: var(--light-green);
-        transform: scale(1.03);
-    }
-    
-    .benefit-icon {
-        background: var(--primary-green);
-        color: white;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8rem;
-        margin: 0 auto 1.5rem;
-    }
-    
-    /* Portfolio */
-    .portfolio {
-        background: var(--light-green);
-    }
-    
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-    
-    .portfolio-item {
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-    }
-    
-    .portfolio-img {
-        height: 200px;
-        background: linear-gradient(45deg, var(--primary-blue), var(--primary-green));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 3rem;
-    }
-    
-    .portfolio-content {
-        padding: 1.5rem;
-        text-align: center;
-    }
-</style>
-<!-- CTA Banner -->
-<div class="cta-banner">
-    <div class="container">
-        <h2>Let's make your school smart & digital — contact me today!</h2>
-        <a href="https://wa.me/918580594404" class="btn btn-whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i> Get Started on WhatsApp
-        </a>
-    </div>
-</div>
-
-<!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="container">
-        <div class="section-header">
-            <h2>Contact Me</h2>
-            <p>Reach out for inquiries or to discuss your school's digital needs</p>
-        </div>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div>
-                        <h3>Name</h3>
-                        <p>Krishna Kushwaha</p>
-                    </div>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>8580594404</p>
-                    </div>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>kk5674010@gmail.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <div>
-                        <h3>WhatsApp</h3>
-                        <p>Direct message available 24/7</p>
-                        <a href="https://wa.me/918580594404" class="btn btn-whatsapp" style="margin-top: 10px;">
-                            <i class="fab fa-whatsapp"></i> Message Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <h3>Send a Message</h3>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="school">School Name</label>
-                        <input type="text" id="school">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div>
-                <div class="footer-logo">Krishna Kushwaha Digital</div>
-                <p>Transforming village and small schools with affordable digital solutions.</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div>
-                <h3>Quick Links</h3>
-                <ul style="list-style: none;">
-                    <li style="margin-bottom: 0.8rem;"><a href="#home" style="color: #f5f5f5; text-decoration: none;">Home</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#services" style="color: #f5f5f5; text-decoration: none;">Services</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#benefits" style="color: #f5f5f5; text-decoration: none;">Benefits</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#portfolio" style="color: #f5f5f5; text-decoration: none;">Portfolio</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#contact" style="color: #f5f5f5; text-decoration: none;">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3>Contact Info</h3>
-                <p><i class="fas fa-phone" style="margin-right: 10px;"></i> 8580594404, 8790729607</p>
-                <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> kk5674010@gmail.com</p>
-                <p><i class="fab fa-whatsapp" style="margin-right: 10px;"></i> WhatsApp: 8580594404</p>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            <p>Copyright © 2025 Smart School Hub Digital. All rights reserved.</p>
-            <p>Designed by Krishna Kushwaha</p>
-        </div>
-    </div>
-</footer>
-
-<style>
-    /* CTA Banner */
-    .cta-banner {
-        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
-        color: white;
-        text-align: center;
-        padding: 3rem 0;
-    }
-    
-    .cta-banner h2 {
-        color: white;
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    /* Contact */
-    .contact-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 3rem;
-    }
-    
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .contact-card {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        background: white;
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: var(--shadow);
-    }
-    
-    .contact-icon {
-        background: var(--primary-blue);
-        color: white;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.3rem;
-    }
-    
-    .contact-form {
-        background: white;
-        padding: 2rem;
-        border-radius: 10px;
-        box-shadow: var(--shadow);
-    }
-    
-    .form-group {
-        margin-bottom: 1.5rem;
-    }
-    
-    .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 0.8rem;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .form-group textarea {
-        height: 150px;
-        resize: vertical;
-    }
-    
-    /* Footer */
-    footer {
-        background: #222;
-        color: var(--light-text);
-        padding: 3rem 0 1.5rem;
-    }
-    
-    .footer-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .footer-logo {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        color: white;
-    }
-    
-    .social-icons {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-    
-    .social-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #444;
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    
-    .social-icon:hover {
-        background: var(--primary-green);
-        transform: translateY(-3px);
-    }
-    
-    .copyright {
-        text-align: center;
-        padding-top: 1.5rem;
-        border-top: 1px solid #444;
-        font-size: 0.9rem;
-        color: #aaa;
-    }
-    
-    .whatsapp-float {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 60px;
-        height: 60px;
-        background: #25D366;
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8rem;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        z-index: 99;
-        text-decoration: none;
-        animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-</style>
-<style>
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .mobile-menu-btn {
-            display: block;
-        }
-        
-        nav ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--primary-blue);
-            flex-direction: column;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        
-        nav ul.show {
-            display: flex;
-        }
-        
-        .hero h1 {
-            font-size: 2rem;
-        }
-        
-        .hero p.subline {
-            font-size: 1.2rem;
-        }
-    }
-</style>
-
-<script>
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-    
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-    });
-    
-    // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('show');
-        });
-    });
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Simple form validation
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        if (name && email && message) {
-            alert('Thank you for your message! Krishna will contact you soon.');
-            contactForm.reset();
-        } else {
-            alert('Please fill in all required fields.');
-        }
-    });
-</script>
 </body>
 </html>
